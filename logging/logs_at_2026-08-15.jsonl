@@ -1,0 +1,76 @@
+{
+    "date": "2026_08_15-15:14:09",
+    "type_of_error": "UndefinedError",
+    "message": "'cat' is undefined",
+    "location": "back_end/index"
+}{
+    "date": "2026_08_15-15:25:14",
+    "type_of_error": "ConnectionError",
+    "message": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Max retries exceeded with url: /api/json/v1/961249867//random.php (Caused by NameResolutionError(\"HTTPSConnection(host='www.thecocktaildb.com', port=443): Failed to resolve 'www.thecocktaildb.com' ([Errno 11001] getaddrinfo failed)\"))",
+    "location": "pull_db/get_random_drink"
+}{
+    "date": "2026_08_15-15:25:16",
+    "type_of_error": "ConnectionError",
+    "message": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Max retries exceeded with url: /api/json/v1/961249867//random.php (Caused by NameResolutionError(\"HTTPSConnection(host='www.thecocktaildb.com', port=443): Failed to resolve 'www.thecocktaildb.com' ([Errno 11001] getaddrinfo failed)\"))",
+    "location": "pull_db/get_random_drink"
+}{
+    "date": "2026_08_15-15:25:17",
+    "type_of_error": "ConnectionError",
+    "message": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Max retries exceeded with url: /api/json/v1/961249867//random.php (Caused by NameResolutionError(\"HTTPSConnection(host='www.thecocktaildb.com', port=443): Failed to resolve 'www.thecocktaildb.com' ([Errno 11001] getaddrinfo failed)\"))",
+    "location": "pull_db/get_random_drink"
+}{
+    "date": "2026_08_15-15:32:00",
+    "type_of_error": "ConnectionError",
+    "message": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Max retries exceeded with url: /api/json/v1/961249867//random.php (Caused by NameResolutionError(\"HTTPSConnection(host='www.thecocktaildb.com', port=443): Failed to resolve 'www.thecocktaildb.com' ([Errno 11001] getaddrinfo failed)\"))",
+    "location": "pull_db/get_random_drink"
+}{
+    "date": "2026_08_15-15:33:17",
+    "type_of_error": "ConnectionError",
+    "message": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Max retries exceeded with url: /api/json/v1/961249867//random.php (Caused by NameResolutionError(\"HTTPSConnection(host='www.thecocktaildb.com', port=443): Failed to resolve 'www.thecocktaildb.com' ([Errno 11001] getaddrinfo failed)\"))",
+    "location": "pull_db/get_random_drink"
+}{
+    "date": "2026_08_15-16:35:53",
+    "type_of_error": "KeyError",
+    "message": "'strIngredient1'",
+    "location": "functions/result_drinks_from_ingr"
+}{
+    "date": "2026_08_15-16:35:53",
+    "type_of_error": "TemplateSyntaxError",
+    "message": "unexpected '%'",
+    "location": "back_end/ingridient"
+}{
+    "date": "2026_08_15-16:36:43",
+    "type_of_error": "KeyError",
+    "message": "'strIngredient1'",
+    "location": "functions/result_drinks_from_ingr"
+}{
+    "date": "2026_08_15-16:36:43",
+    "type_of_error": "TemplateSyntaxError",
+    "message": "unexpected '%'",
+    "location": "back_end/ingridient"
+}{
+    "date": "2026_08_15-16:53:02",
+    "type_of_error": "TemplateSyntaxError",
+    "message": "unexpected '%'",
+    "location": "back_end/ingridient"
+}{
+    "date": "2026_08_15-16:54:02",
+    "type_of_error": "TemplateSyntaxError",
+    "message": "unexpected '%'",
+    "location": "back_end/ingridient"
+}{
+    "date": "2026_08_15-16:54:51",
+    "type_of_error": "UndefinedError",
+    "message": "'i' is undefined",
+    "location": "back_end/ingridient"
+}{
+    "date": "2026_08_15-17:04:57",
+    "type_of_error": "ConnectionError",
+    "message": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Max retries exceeded with url: /api/json/v1/961249867/filter.php?c=Cocktail (Caused by NameResolutionError(\"HTTPSConnection(host='www.thecocktaildb.com', port=443): Failed to resolve 'www.thecocktaildb.com' ([Errno 11001] getaddrinfo failed)\"))",
+    "location": "pull_db/search_from_category"
+}{
+    "date": "2026_08_15-17:04:57",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_categories"
+}

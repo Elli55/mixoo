@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Mixoo</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+
+    </head>
+    <body>
+
+        <header>
+            {{ head | safe}}
+        </header>
+
+        <article id="ingr_area" class="container">
+
+            
+            {% if ingr_info %}
+                {% for item in ingr_info %}
+
+                    
+
+                    <section class="ingr_pres">
+
+                        <img src="{{item.image}}/medium" alt="{{item.name}}">
+
+                        <div class="ingr_info_div">
+
+                            <p class="titles">{{item.name}}</p>
+                            <p class="description_text">{{item.vol}} vol</p>
+                            <p class="description_text">{{item.description}}</p>
+                            
+                        </div>    
+
+                    </section>    
+                    
+                {% endfor %}
+            {% endif %}        
+            
+
+
+        </article>
+
+        <article id="related_drinks" class="container">
+
+            <h2 class="titles">Drinks with this ingriedient</h2>
+
+            <section class="result_of_cate">
+
+                {% if cocktails %}
+
+                {% for cocktail in cocktails %}
+
+                    <a class="drink_card" href="{{ url_for('search', cock_name=cocktail.name) }}" >
+                                
+                                <img src="{{cocktail.image}}/small" class="drink_foto" >
+                                <p class="drink_name">{{cocktail.name}}</p>
+                    </a>
+
+
+                {% endfor %}
+
+                {% endif %}
+            </section>
+
+        </article>
+
+
+        {{footer | safe}}
+
+        
+        
+
+        
+
+    </body>
+</html>    

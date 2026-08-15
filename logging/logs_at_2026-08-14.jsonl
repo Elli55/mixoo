@@ -1,0 +1,126 @@
+{
+    "date": "2026_08_14-11:10:03",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'inf' where it is not associated with a value",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-11:10:16",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'inf' where it is not associated with a value",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-11:10:24",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'inf' where it is not associated with a value",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-11:10:35",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'inf' where it is not associated with a value",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-11:11:22",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'inf' where it is not associated with a value",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-11:11:52",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'inf' where it is not associated with a value",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-11:12:44",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'inf' where it is not associated with a value",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-11:17:25",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-11:20:25",
+    "type_of_error": "TemplateSyntaxError",
+    "message": "unexpected '}'",
+    "location": "back_end/search"
+}{
+    "date": "2026_08_14-11:51:11",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-15:19:35",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'ingridients' where it is not associated with a value",
+    "location": "back_en/ingridients"
+}{
+    "date": "2026_08_14-15:20:29",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'ingridients' where it is not associated with a value",
+    "location": "back_en/ingridients"
+}{
+    "date": "2026_08_14-15:20:32",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'ingridients' where it is not associated with a value",
+    "location": "back_en/ingridients"
+}{
+    "date": "2026_08_14-15:33:50",
+    "type_of_error": "UnboundLocalError",
+    "message": "cannot access local variable 'ingridients' where it is not associated with a value",
+    "location": "back_en/ingridients"
+}{
+    "date": "2026_08_14-15:53:00",
+    "type_of_error": "UndefinedError",
+    "message": "'i' is undefined",
+    "location": "back_en/ingridients"
+}{
+    "date": "2026_08_14-17:13:43",
+    "type_of_error": "ConnectionError",
+    "message": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Max retries exceeded with url: /api/json/v1/961249867/search.php?i=Gin (Caused by NameResolutionError(\"HTTPSConnection(host='www.thecocktaildb.com', port=443): Failed to resolve 'www.thecocktaildb.com' ([Errno 11001] getaddrinfo failed)\"))",
+    "location": "pull_db/get_info_about_ing"
+}{
+    "date": "2026_08_14-17:13:43",
+    "type_of_error": "str",
+    "message": "no result",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-17:13:43",
+    "type_of_error": "ConnectionError",
+    "message": "HTTPSConnectionPool(host='www.thecocktaildb.com', port=443): Max retries exceeded with url: /api/json/v1/961249867/list.php?i=list (Caused by NameResolutionError(\"HTTPSConnection(host='www.thecocktaildb.com', port=443): Failed to resolve 'www.thecocktaildb.com' ([Errno 11001] getaddrinfo failed)\"))",
+    "location": "pull_db/get_list_of_igr"
+}{
+    "date": "2026_08_14-17:18:21",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-17:19:10",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-17:19:22",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_ingridient_info"
+}{
+    "date": "2026_08_14-17:28:47",
+    "type_of_error": "JSONDecodeError",
+    "message": "Expecting value: line 1 column 1 (char 0)",
+    "location": "pull_db/get_random_drink"
+}{
+    "date": "2026_08_14-21:02:39",
+    "type_of_error": "TemplateSyntaxError",
+    "message": "Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.",
+    "location": "back_end/index"
+}{
+    "date": "2026_08_14-21:03:27",
+    "type_of_error": "TemplateSyntaxError",
+    "message": "Encountered unknown tag 'end'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.",
+    "location": "back_end/index"
+}{
+    "date": "2026_08_14-21:03:40",
+    "type_of_error": "TemplateSyntaxError",
+    "message": "Encountered unknown tag 'end'. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.",
+    "location": "back_end/index"
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MIXO</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
+
+
+    </head>
+    <body>
+
+        <header>
+            {{header | safe}}
+        </header>
+
+        {% if cocktails %}
+
+
+        {% for cocktail in cocktails %}
+        
+        <article id="result_of_search_cock" class="container">
+            <section>
+            <h2 class="titles">{{cocktail.name}}</h2>
+            
+            </section>
+
+            <section class="drink_pres">
+                <div>
+                    <img src="{{cocktail.image}}/small" class="ingr_foto">
+                </div>    
+
+                <div >
+                    
+
+                    {% for ingr in cocktail.ingridients %}
+                        <p>
+                            <a href="{{ url_for('ingredient', ingr_name=ingr.ingr) }}" class="my_button"> {{ingr.ingr}} :</a> 
+                            <span>{{ingr.measure}}</span>
+                        </p>    
+                        
+                    {% endfor %}
+                    
+                    <p class="description_text">{{cocktail.eng_resept}}</p>
+
+                    <p class="description_text">For more information about the ingridients, click on the names pls.</p>
+                    
+                </div>    
+            </section>  
+
+
+        </article>
+
+        {% endfor %}
+        
+        {% endif %}
+
+        {{footer | safe}}
+
+    </body>
+</html>    

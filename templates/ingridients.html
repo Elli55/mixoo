@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Mixoo</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
+
+    </head>
+    <body>
+
+        <header>
+           {{head | safe}}
+        </header>
+
+        <article id="search_area" class="container">
+            <section class="ingr_search_form">
+                <form action="/ingridients" method="get">
+                    <input type="text" name="ingr_name" placeholder="Name of Ingridient">
+                    <button type="submit">Search</button>
+                    
+                </form>
+            </section>    
+            
+            <section class="ingr_pres">
+
+                {% if result_of_search %}
+                    {% for i in result_of_search %}
+                        <a href="{{ url_for('ingredient', ingr_name=i.name) }}" class="result_card_ingr">
+                        
+
+                                <img src="{{i.image}}/small" class="search_ingr_foto">
+
+                                <p> {{i.name}}</p>
+                        </a>        
+                                
+                                
+                    {% endfor %}
+                {% endif %}        
+            </section>
+
+            
+        </article>
+        <article id="ingridients_area" class="container">
+
+            <section class="ingridients_names">
+
+                {% if ingridients %}
+                    {% for ing in ingridients %}
+                
+                    
+                        <a href="/ingredient/{{ing}}" class="ingr_name_in_list">{{ing}}</a>
+                    
+                    {% endfor %}               
+                {% endif %}
+            </section>
+
+        </article>
+
+        
+
+    </body>
+</html>    

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Mixoo..</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
+
+    </head>
+    <body>
+
+        <header>
+            {{head | safe}}
+        </header>
+
+       
+
+        {% if random_drink %}
+        
+
+        <article id="random_area" class="container">
+
+            <section>
+                <h2 class="titles">{{random_drink.name}}</h2>
+            
+            </section>
+
+            <section class="drink_pres">
+                <div>
+                    <img src="{{random_drink.image}}/small" class="ingr_foto">
+                </div>    
+
+                <div >
+                    
+
+                    {% for ingr in random_drink.ingridients %}
+                        <p>
+                            <a href="{{ url_for('ingredient', ingr_name=ingr.ingr) }}" class="my_button"> {{ingr.ingr}} :</a> 
+                            <span>{{ingr.measure}}</span>
+                        </p>    
+                        
+                    {% endfor %}
+                    
+                    <p class="description_text">{{random_drink.eng_resept}}</p>
+
+                    <p class="description_text">For more information about the ingridients, click on the names pls.</p>
+                    
+                </div>    
+            </section>  
+
+
+
+        </article>
+
+        {% endif %}
+
+         <article id="landing_search" class="container">
+            <section>
+                <p class="cta_text">Search for cocktail recipe ... </p>
+            </section>
+            <section class="search_cocktail">
+                <form action="/search" method="get" class="search_form">
+                    <input type="text" name="cock_name" placeholder="  Name of Drink">
+                    <button type="submit">Search</button>
+                </form>
+            </section>    
+        </article>
+
+        <article id="cta_area" class="container">
+
+            <h2 class="titles"> What you can find here </h2>
+
+            <div class="cta_s">
+                <section class="cta_card">
+                    <a href="/categories" >
+
+                        <div style="background-image: url('/static/Fotos/cta_category.jpg')" alt="drink categories" class="cta_img">
+                                        <span class="cta_name">List of drinks by different categories</span>
+    
+                        </div>
+
+                    </a>
+                    
+                </section>
+
+                <section class="blog_card">
+                    <a href="/blog" class="cta_card">
+
+                        <div style="background-image: url('/static/Fotos/cta_blog.jpg')" alt="drink categories" class="cta_img">
+                                        <span class="cta_name">Something about drinks or experience</span>
+    
+                        </div>
+
+                    </a>
+                    
+                </section>
+
+                <section class="ingridients_card">
+                    <a href="/ingridients" class="cta_card">
+
+                        <div style="background-image: url('/static/Fotos/cta_ingridients.jpg')" alt="drink ingridients" class="cta_img">
+                                        <span class="cta_name">What have you got to make a different drink?</span>
+    
+                        </div>
+
+                    </a>
+                    
+                </section>
+            </div>    
+        </article> 
+
+
+        {{footer | safe}}
+
+    </body>
+</html>    

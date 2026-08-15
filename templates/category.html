@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{{cat_name}}</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
+
+
+    </head>
+    <body>
+
+        <header>
+            <article id="head" class="container">
+                <section class="description_text">
+                    <h2 class="brand">Mixoo...</h2>
+                </section>
+
+                <nav class="navi">
+                    <ul class="line_ul">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/categories">Categories</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="/ingridients">Ingridients</a></li>    
+                    </ul>
+                </nav>
+
+            </article>
+           
+        </header>
+
+
+        <article id="cate_zone" class="container">
+
+            <section>
+
+                <h3 class="titles">{{cat_name}}</h3>
+
+            </section>
+
+            <section class="result_of_cate">
+
+                {% if drinks %}
+
+                    {% for i in drinks %}
+                    <a class="drink_card" href="{{ url_for('search', cock_name=i.name) }}" >
+                        
+                        <img src="{{i.image}}/small" class="drink_foto" >
+                        <p class="drink_name">{{i.name}}</p>
+                    </a>
+
+                    {% endfor %}
+                {% endif %}    
+
+            </section>
+
+        </article>
+
+    </body>
+
+</html>    

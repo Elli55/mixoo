@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MIXO</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
+
+    </head>
+    <body>
+
+       <header>
+            <article id="head" class="container">
+                <section class="description_text">
+                    <h2 class="brand">Mixoo...</h2>
+                </section>
+
+                <nav class="navi">
+                    <ul class="line_ul">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="categories">Categories</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="ingridients">Ingridients</a></li>    
+                    </ul>
+                </nav>
+
+            </article>
+           
+        </header>
+
+        <article id="categories_area" class="container">
+
+            <h2 class="titles">Categories</h2>
+
+            <section class="category_names">
+
+                {% for cat in cate_and_image %}
+                    <div class="category_card">
+                        <a href="{{ url_for('category', cat_name=cat.name) }}">
+
+                            <div style="background-image: url({{cat.image}})" alt="{{cat.name}}" class="category_img">
+                                <span class="category_name">{{cat.name}}</span>
+
+                            </div>
+
+                        </a>
+                    </div>    
+                {% endfor %}
+
+            </section>
+
+        </article>
+    
+    </body>
+</html>    

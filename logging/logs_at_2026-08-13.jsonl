@@ -1,0 +1,81 @@
+{
+    "date": "2026_08_13-17:47:03",
+    "type_of_error": "TypeError",
+    "message": "render_template() takes 1 positional argument but 2 were given",
+    "location": "back_end/category"
+}{
+    "date": "2026_08_13-17:48:58",
+    "type_of_error": "str",
+    "message": "no result for category",
+    "location": "functions/result_from_category"
+}{
+    "date": "2026_08_13-17:48:58",
+    "type_of_error": "TypeError",
+    "message": "render_template() takes 1 positional argument but 2 were given",
+    "location": "back_end/category"
+}{
+    "date": "2026_08_13-17:52:07",
+    "type_of_error": "AttributeError",
+    "message": "'str' object has no attribute 'get'",
+    "location": "functions/result_from_categories"
+}{
+    "date": "2026_08_13-17:52:07",
+    "type_of_error": "TypeError",
+    "message": "render_template() takes 1 positional argument but 2 were given",
+    "location": "back_end/category"
+}{
+    "date": "2026_08_13-17:53:37",
+    "type_of_error": "list",
+    "message": "[{'name': 'Ordinary Drink', 'image': 'https://www.thecocktaildb.com/images/media/drink/hrxfbl1606773109.jpg/small'}, {'name': 'Cocktail', 'image': 'https://www.thecocktaildb.com/images/media/drink/4tymma1604179273.jpg/small'}, {'name': 'Shot', 'image': 'https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg/small'}, {'name': 'Homemade Liqueur', 'image': 'https://www.thecocktaildb.com/images/media/drink/swqxuv1472719649.jpg/small'}, {'name': 'Cocoa', 'image': 'https://www.thecocktaildb.com/images/media/drink/hdzwrh1487603131.jpg/small'}, {'name': 'Shake', 'image': 'https://www.thecocktaildb.com/images/media/drink/syusvw1468876634.jpg/small'}]",
+    "location": "function/search categories"
+}{
+    "date": "2026_08_13-17:53:37",
+    "type_of_error": "AttributeError",
+    "message": "'str' object has no attribute 'get'",
+    "location": "functions/result_from_categories"
+}{
+    "date": "2026_08_13-17:53:37",
+    "type_of_error": "TypeError",
+    "message": "render_template() takes 1 positional argument but 2 were given",
+    "location": "back_end/category"
+}{
+    "date": "2026_08_13-17:54:45",
+    "type_of_error": "TypeError",
+    "message": "render_template() takes 1 positional argument but 2 were given",
+    "location": "back_end/category"
+}{
+    "date": "2026_08_13-18:57:16",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_categories"
+}{
+    "date": "2026_08_13-18:57:35",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_categories"
+}{
+    "date": "2026_08_13-18:57:57",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_categories"
+}{
+    "date": "2026_08_13-18:58:00",
+    "type_of_error": "str",
+    "message": "no result for category",
+    "location": "functions/result_from_category"
+}{
+    "date": "2026_08_13-19:10:47",
+    "type_of_error": "str",
+    "message": "no result for category",
+    "location": "functions/result_from_category"
+}{
+    "date": "2026_08_13-19:11:33",
+    "type_of_error": "str",
+    "message": "no result for category",
+    "location": "functions/result_from_category"
+}{
+    "date": "2026_08_13-19:12:35",
+    "type_of_error": "str",
+    "message": "no result for category",
+    "location": "functions/result_from_category"
+}
