@@ -58,7 +58,10 @@ def html_footer():
 
 
 
-        </article>'''
+        </article>
+        
+        
+        <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b0c34b97e0fe4a6aab6d0ab5eb9ce571"}'></script><!-- End Cloudflare Web Analytics -->'''
     return footer
 
 
