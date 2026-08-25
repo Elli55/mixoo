@@ -24,7 +24,7 @@ def html_header():
 
      head ='''<article id="head" class="container">
                 <section class="description_text">
-                    <a href="/" class="brand"><h2 class="brand">Mixoo...</h2></a>
+                    <a href="/" class="brand">Mixoo...</a>
                 </section>
 
                 <nav class="navi">
@@ -42,17 +42,17 @@ def html_header():
 
 def html_footer():
 
-    footer = '''<article id="footer" class="container">
+    footer = '''<article id="footer" >
 
             <h2 class="brand">Mixoo..</h2>
 
             <section class="copyright">
-                <p>2026 / Copyright ©  : 
+                <p class="description_text">2026 / Copyright ©  : 
                 <span></span><a href="https://www.doneatelli.com" target="_blank" class="my_button"> Elli </a></span></p>
             </section>
 
             <section class="db">
-                <p>Used Date Base :  
+                <p class="description_text">Used Date Base :  
                 <span></span><a href="https://www.thecocktaildb.com/documentation" target="_blank" class="my_button">TheCocktailDB</a></span></p>
             </section>
 

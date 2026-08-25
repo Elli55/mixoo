@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Mixoo..</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
 
     </head>
@@ -35,14 +36,14 @@
                     {% for ingr in random_drink.ingridients %}
                         <p>
                             <a href="{{ url_for('ingredient', ingr_name=ingr.ingr) }}" class="my_button"> {{ingr.ingr}} :</a> 
-                            <span>{{ingr.measure}}</span>
+                            <span class="ingr_mens">{{ingr.measure}}</span>
                         </p>    
                         
                     {% endfor %}
                     
                     <p class="description_text">{{random_drink.eng_resept}}</p>
 
-                    <p class="description_text">For more information about the ingridients, click on the names pls.</p>
+                    <p class="description_text_bold">For more information about the ingridients, click on the names pls.</p>
                     
                 </div>    
             </section>  
@@ -53,7 +54,7 @@
 
         {% endif %}
 
-         <article id="landing_search" class="container">
+         <article id="landing_search" >
             <section>
                 <p class="cta_text">Search for cocktail recipe ... </p>
             </section>

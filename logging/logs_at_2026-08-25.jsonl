@@ -1,0 +1,6 @@
+{
+    "date": "2026_08_25-16:56:17",
+    "type_of_error": "TypeError",
+    "message": "'NoneType' object is not iterable",
+    "location": "functions/result_from_ingridient_info"
+}
