@@ -403,7 +403,7 @@ button:hover {
 
 .result_of_cate{
     display: grid;
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     padding-bottom:2rem ;
     gap: 20px;
@@ -572,3 +572,231 @@ button:hover {
     
 }
 
+
+
+
+
+
+
+/* Media elements*/ 
+
+@media (max-width: 1024px) {
+    #landing_search {
+        margin: 4rem 3rem;      /* 20rem-dən 3rem-ə düşür */
+    }
+}
+
+@media (max-width: 768px) {
+    #landing_search {
+        margin: 3rem 1rem;
+        flex-direction: column; 
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #landing_search {
+        margin: 2rem 0.3rem;
+        padding: 1.5rem 1rem;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .result_of_cate {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .result_of_cate {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 1rem 0.3rem;
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #head {
+        grid-template-columns: 1fr;  
+        text-align: center;
+    }
+
+    .brand {
+        font-size: 2.5rem;
+        justify-content: center;    
+    }
+
+    .navi ul {
+        justify-content: center;     
+        gap: 1.5rem;
+        margin-right: 0;
+    }
+
+    .navi a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand {
+        font-size: 1.8rem;
+    }
+
+    .navi ul {
+        flex-wrap: wrap;            
+        gap: 0.8rem;
+        padding: 0;
+        margin: 0.5rem 0;
+    }
+
+    .navi a {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cta_text {
+        font-size: 1.8rem;
+        white-space: normal;     
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta_text {
+        font-size: 1.4rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cta_s {
+        grid-template-columns: 1fr 1fr;  
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta_s {
+        grid-template-columns: 1fr;      
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cta_img {
+        width: 100%;
+    }
+
+    .category_img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .category_names {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .category_names {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .drink_pres {
+        grid-template-columns: 1fr;  
+    }
+}
+
+@media (max-width: 480px) {
+    .ingr_pres {
+        flex-direction: column;   
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #search_area {
+        grid-template-columns: 1fr; 
+        margin: 2rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #search_area {
+        margin: 1rem 0.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ingridients_names {
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .ingridients_names {
+        columns: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .titles {
+        font-size: 1.7rem;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .titles {
+        font-size: 1.4rem;
+        margin: 1.5rem 0;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer {
+        margin: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer {
+        flex-direction: column;       
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 1.5rem 0.5rem;
+    }
+}
