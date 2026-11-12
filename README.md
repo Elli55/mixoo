@@ -1,5 +1,5 @@
 # MIXOO
-İts a webside for mixology
+İts a web-app for mixology
 
 # If you want to make certain changes to the project, don't hesitate. 
 
